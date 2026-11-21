@@ -206,7 +206,7 @@ def main():
     ap.add_argument("--token", default=os.environ.get("ZERO24_TOKEN", "makus-local-token"))
     ap.add_argument("--port", type=int, default=9099)
     ap.add_argument("--interval", type=float, default=900.0)
-    ap.add_argument("--relay", default=None, help="outbound relay URL (Cloud Shell mode, no inbound port)")
+    ap.add_argument("--relay", default=os.environ.get("ZERO24_RELAY"), help="outbound relay URL (Cloud Shell mode, no inbound port)")
     a = ap.parse_args()
     agent = Agent(a.token, a.interval, relay=a.relay)
     threading.Thread(target=agent.supervisor, daemon=True).start()
