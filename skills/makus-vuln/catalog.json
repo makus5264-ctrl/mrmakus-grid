@@ -1,0 +1,2660 @@
+{
+  "generated_at": "2026-11-10T13:34:03+00:00",
+  "arsenal_root": "C:\\Users\\Computer\\OneDrive\\Desktop\\FULL JD",
+  "skill": "makus-vuln",
+  "files_scanned": 178,
+  "categories": {
+    "misc": 70,
+    "target-discovery": 15,
+    "endpoint-discovery": 9,
+    "auth-forms": 18,
+    "exposed-files": 1,
+    "headers": 1,
+    "sqli": 28,
+    "brute": 26,
+    "cloud-metadata": 2,
+    "upload": 2,
+    "port-probe": 4,
+    "idor": 1,
+    "js-analysis": 1
+  },
+  "wordlists": {
+    "paths": 298,
+    "payloads": 24
+  },
+  "hardcoded_hosts": [
+    "103.233.193.42",
+    "127.0.0.1",
+    "2captcha.com",
+    "api.anti-captcha.com",
+    "api.github.com",
+    "attacker_server",
+    "discord.com",
+    "download.wireguard.com",
+    "example.com",
+    "ftp.srn.ac.th",
+    "godlnwstore.com",
+    "hooks.slack.com",
+    "idmlbb.com",
+    "kiddyxstore.com",
+    "meen.in.th",
+    "nuadkhawshop.com",
+    "opencode.ai",
+    "schoolconnex.app",
+    "siamaidai.xyz",
+    "tcwk.ac.th",
+    "violet-lotto-violet-uat.asia-southeast1.firebasedatabase.app",
+    "www",
+    "www.awgeshop.com",
+    "www.cloudflare.com",
+    "www.google.com",
+    "www.meen.in.th",
+    "www.premium24hr.com",
+    "www.sp2.go.th",
+    "www.srn.ac.th",
+    "z9pay.com"
+  ],
+  "parameterized_scripts": [
+    "exploit/adm_brute2.py",
+    "exploit/adm_tor.py",
+    "exploit/backend_fetch.py",
+    "exploit/da_brute.py",
+    "exploit/da_tor.py",
+    "exploit/livesearch_sqli.py",
+    "exploit/mysql_tor.py",
+    "exploit/pma_post_brute.py",
+    "exploit/probe_paths.ps1",
+    "exploit/school_id_tamper.py",
+    "exploit/sqli.py",
+    "exploit/xmlrpc_brute.py",
+    "hackd/hackd.py",
+    "hackd/harness.py",
+    "makus-keygen.ps1",
+    "makus-voicegun/voicegun.py",
+    "makus-voicegun/voicegun2.py",
+    "makus-voicegun/voicegun3.py",
+    "opencode2api/warp_rotate.py",
+    "qoder-zen.ps1"
+  ],
+  "scripts": [
+    {
+      "path": "awgeshop_full.py",
+      "category": "misc",
+      "bytes": 1954,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "www.awgeshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "awgeshop_recon.py",
+      "category": "target-discovery",
+      "bytes": 957,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "www.awgeshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "awgeshop_redirect.py",
+      "category": "endpoint-discovery",
+      "bytes": 1571,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "www.awgeshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "check_api_login.py",
+      "category": "auth-forms",
+      "bytes": 1107,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "check_endpoints.py",
+      "category": "endpoint-discovery",
+      "bytes": 906,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com",
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "check_exposed_files.py",
+      "category": "exposed-files",
+      "bytes": 1382,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "check_headers.py",
+      "category": "headers",
+      "bytes": 705,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com",
+        "siamaidai.xyz",
+        "www.awgeshop.com",
+        "www.premium24hr.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "check_js_endpoints.py",
+      "category": "endpoint-discovery",
+      "bytes": 887,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "check_login_form.py",
+      "category": "auth-forms",
+      "bytes": 1222,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "check_nuandkhaw_js.py",
+      "category": "misc",
+      "bytes": 435,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "check_product_sqli.py",
+      "category": "sqli",
+      "bytes": 972,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "check_siamaidai.py",
+      "category": "misc",
+      "bytes": 927,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "check_siamaidai_login.py",
+      "category": "auth-forms",
+      "bytes": 417,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "check_sqli_content.py",
+      "category": "sqli",
+      "bytes": 528,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "da_origin_brute.py",
+      "category": "brute",
+      "bytes": 3479,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 2,
+      "payloads": 0,
+      "hosts": [
+        "103.233.193.42"
+      ],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/adm_brute.py",
+      "category": "brute",
+      "bytes": 3870,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/adm_brute2.py",
+      "category": "brute",
+      "bytes": 4142,
+      "parameterized": true,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/adm_map.py",
+      "category": "endpoint-discovery",
+      "bytes": 1399,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/adm_tor.py",
+      "category": "brute",
+      "bytes": 4014,
+      "parameterized": true,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "godlnwstore.com"
+      ],
+      "ip_literals": [
+        "103.233.193.42",
+        "127.0.0.1"
+      ],
+      "third_party_imports": [
+        "socks"
+      ]
+    },
+    {
+      "path": "exploit/backend_fetch.py",
+      "category": "misc",
+      "bytes": 2689,
+      "parameterized": true,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/cf_probes.py",
+      "category": "misc",
+      "bytes": 3026,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 1,
+      "hosts": [
+        "idmlbb.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/cf_probes2.py",
+      "category": "misc",
+      "bytes": 3244,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [
+        "idmlbb.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/cfg_tor.py",
+      "category": "brute",
+      "bytes": 2257,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 25,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42",
+        "127.0.0.1"
+      ],
+      "third_party_imports": [
+        "socks"
+      ]
+    },
+    {
+      "path": "exploit/cooldown_probe.py",
+      "category": "misc",
+      "bytes": 1300,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/da_brute.py",
+      "category": "brute",
+      "bytes": 3516,
+      "parameterized": true,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42",
+        "127.0.0.1"
+      ],
+      "third_party_imports": [
+        "socks"
+      ]
+    },
+    {
+      "path": "exploit/da_tor.py",
+      "category": "brute",
+      "bytes": 2261,
+      "parameterized": true,
+      "uses_urllib": false,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42",
+        "127.0.0.1"
+      ],
+      "third_party_imports": [
+        "socks"
+      ]
+    },
+    {
+      "path": "exploit/damage_vectors.py",
+      "category": "brute",
+      "bytes": 7518,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 2,
+      "payloads": 0,
+      "hosts": [
+        "ftp.srn.ac.th",
+        "www.srn.ac.th"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/debug_rpc.py",
+      "category": "misc",
+      "bytes": 1430,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "www.meen.in.th"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/exim_relay_test.py",
+      "category": "misc",
+      "bytes": 1385,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42",
+        "127.0.0.1",
+        "4.93.0.4"
+      ],
+      "third_party_imports": [
+        "socks"
+      ]
+    },
+    {
+      "path": "exploit/exim_tor_probe.py",
+      "category": "brute",
+      "bytes": 1562,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42",
+        "127.0.0.1",
+        "4.93.0.4"
+      ],
+      "third_party_imports": [
+        "socks"
+      ]
+    },
+    {
+      "path": "exploit/exim_tor_probe2.py",
+      "category": "brute",
+      "bytes": 2520,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42",
+        "127.0.0.1",
+        "4.93.0.4"
+      ],
+      "third_party_imports": [
+        "socks"
+      ]
+    },
+    {
+      "path": "exploit/extract.py",
+      "category": "misc",
+      "bytes": 2038,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "tcwk.ac.th"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/firebase-uat-rtdb-probe.py",
+      "category": "cloud-metadata",
+      "bytes": 1176,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 2,
+      "payloads": 0,
+      "hosts": [
+        "violet-lotto-violet-uat.asia-southeast1.firebasedatabase.app"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/ftp_brute.py",
+      "category": "brute",
+      "bytes": 3172,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/ftp_razor.py",
+      "category": "misc",
+      "bytes": 2571,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/livesearch_sqli.py",
+      "category": "sqli",
+      "bytes": 7535,
+      "parameterized": true,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "131.0.0.0"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/mcat.py",
+      "category": "misc",
+      "bytes": 379,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/meen_ngg_probe.py",
+      "category": "misc",
+      "bytes": 2254,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 19,
+      "payloads": 2,
+      "hosts": [
+        "www.meen.in.th"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/meen_ngg_upload.py",
+      "category": "upload",
+      "bytes": 2151,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 6,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42",
+        "127.0.0.1"
+      ],
+      "third_party_imports": [
+        "socks"
+      ]
+    },
+    {
+      "path": "exploit/meen_recon.py",
+      "category": "target-discovery",
+      "bytes": 1998,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "www.meen.in.th"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/meen_recon2.py",
+      "category": "target-discovery",
+      "bytes": 2540,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [
+        "www",
+        "www.meen.in.th"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/mysql_tor.py",
+      "category": "sqli",
+      "bytes": 3898,
+      "parameterized": true,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42",
+        "127.0.0.1"
+      ],
+      "third_party_imports": [
+        "pymysql",
+        "socks"
+      ]
+    },
+    {
+      "path": "exploit/origin_probe.py",
+      "category": "port-probe",
+      "bytes": 5042,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 14,
+      "payloads": 1,
+      "hosts": [
+        "example.com"
+      ],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/pftpd_modcopy.py",
+      "category": "misc",
+      "bytes": 3163,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 1,
+      "payloads": 2,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/pma_basic_brute.py",
+      "category": "brute",
+      "bytes": 3726,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "godlnwstore.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/pma_basic_cf.py",
+      "category": "misc",
+      "bytes": 2478,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "godlnwstore.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/pma_brute.py",
+      "category": "brute",
+      "bytes": 4045,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "ftp.srn.ac.th",
+        "www.srn.ac.th"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/pma_brute_ftp.py",
+      "category": "brute",
+      "bytes": 3138,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "ftp.srn.ac.th"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/pma_brute_small.py",
+      "category": "brute",
+      "bytes": 2868,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "godlnwstore.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/pma_post_brute.py",
+      "category": "brute",
+      "bytes": 4015,
+      "parameterized": true,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/port_probe.py",
+      "category": "port-probe",
+      "bytes": 678,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/probe_paths.ps1",
+      "category": "endpoint-discovery",
+      "bytes": 1517,
+      "parameterized": true,
+      "uses_urllib": false,
+      "paths": 60,
+      "payloads": 0,
+      "hosts": [
+        "schoolconnex.app"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/raw_scan.py",
+      "category": "port-probe",
+      "bytes": 1545,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 7,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/reset_probe.py",
+      "category": "misc",
+      "bytes": 2094,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 2,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/school_id_tamper.py",
+      "category": "idor",
+      "bytes": 2670,
+      "parameterized": true,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "www.srn.ac.th"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/shop_sqli_probe.py",
+      "category": "sqli",
+      "bytes": 4099,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 5,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/sitekey_probe.py",
+      "category": "misc",
+      "bytes": 1413,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 1,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/sqli.py",
+      "category": "sqli",
+      "bytes": 2495,
+      "parameterized": true,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 1,
+      "hosts": [
+        "tcwk.ac.th"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/sys3.py",
+      "category": "cloud-metadata",
+      "bytes": 4343,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 21,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/sys4.py",
+      "category": "misc",
+      "bytes": 3094,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 3,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/sys5.py",
+      "category": "misc",
+      "bytes": 2740,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 5,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/system_attack.py",
+      "category": "misc",
+      "bytes": 4587,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 1,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/system_cf.py",
+      "category": "misc",
+      "bytes": 4360,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 1,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/t1.py",
+      "category": "misc",
+      "bytes": 369,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": [
+        "sqli"
+      ]
+    },
+    {
+      "path": "exploit/t2.py",
+      "category": "misc",
+      "bytes": 925,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": [
+        "extract"
+      ]
+    },
+    {
+      "path": "exploit/t3.py",
+      "category": "misc",
+      "bytes": 671,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": [
+        "extract"
+      ]
+    },
+    {
+      "path": "exploit/test_file_upload.py",
+      "category": "upload",
+      "bytes": 3772,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 8,
+      "payloads": 0,
+      "hosts": [
+        "www.sp2.go.th"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/tor_probe.py",
+      "category": "brute",
+      "bytes": 1517,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42",
+        "127.0.0.1"
+      ],
+      "third_party_imports": [
+        "socks"
+      ]
+    },
+    {
+      "path": "exploit/tor_probe2.py",
+      "category": "brute",
+      "bytes": 2315,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42",
+        "127.0.0.1"
+      ],
+      "third_party_imports": [
+        "socks"
+      ]
+    },
+    {
+      "path": "exploit/websweep.py",
+      "category": "endpoint-discovery",
+      "bytes": 8766,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 11,
+      "payloads": 1,
+      "hosts": [
+        "idmlbb.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "exploit/xmlrpc_brute.py",
+      "category": "brute",
+      "bytes": 4882,
+      "parameterized": true,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "www.meen.in.th"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "find_login_fields.py",
+      "category": "auth-forms",
+      "bytes": 1009,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "find_login_js.py",
+      "category": "auth-forms",
+      "bytes": 1004,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 1,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "find_targets.py",
+      "category": "target-discovery",
+      "bytes": 5198,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [
+        "103.233.193.42"
+      ],
+      "ip_literals": [
+        "103.233.193.42",
+        "4.93.0.4"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "find_targets_active.py",
+      "category": "target-discovery",
+      "bytes": 4613,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 14,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "find_targets_live.py",
+      "category": "target-discovery",
+      "bytes": 2459,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 8,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "hackd/agent.py",
+      "category": "misc",
+      "bytes": 8530,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": [
+        "harness"
+      ]
+    },
+    {
+      "path": "hackd/burst_test.py",
+      "category": "misc",
+      "bytes": 990,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "127.0.0.1"
+      ],
+      "ip_literals": [
+        "127.0.0.1"
+      ],
+      "third_party_imports": [
+        "requests"
+      ]
+    },
+    {
+      "path": "hackd/hackd.py",
+      "category": "misc",
+      "bytes": 19788,
+      "parameterized": true,
+      "uses_urllib": true,
+      "paths": 72,
+      "payloads": 5,
+      "hosts": [
+        "127.0.0.1",
+        "example.com"
+      ],
+      "ip_literals": [
+        "127.0.0.1"
+      ],
+      "third_party_imports": [
+        "agent",
+        "harness",
+        "requests"
+      ]
+    },
+    {
+      "path": "hackd/harness.py",
+      "category": "misc",
+      "bytes": 5866,
+      "parameterized": true,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "127.0.0.1"
+      ],
+      "ip_literals": [
+        "127.0.0.1"
+      ],
+      "third_party_imports": [
+        "requests"
+      ]
+    },
+    {
+      "path": "hackd/testserver.py",
+      "category": "misc",
+      "bytes": 1528,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 6,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "127.0.0.1"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "hackd/vulnshop.py",
+      "category": "misc",
+      "bytes": 7184,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 19,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "127.0.0.1"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "hackd/watchdog.py",
+      "category": "misc",
+      "bytes": 4089,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "127.0.0.1"
+      ],
+      "ip_literals": [
+        "127.0.0.1"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "idma_targets.py",
+      "category": "target-discovery",
+      "bytes": 5211,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [
+        "103.233.193.42",
+        "godlnwstore.com"
+      ],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "idmlbb_final.py",
+      "category": "misc",
+      "bytes": 2941,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "idmlbb.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "idmlbb_recon.py",
+      "category": "target-discovery",
+      "bytes": 1008,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "idmlbb.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "idmlbb_recon2.py",
+      "category": "target-discovery",
+      "bytes": 737,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "idmlbb.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "idmlbb_sqli.py",
+      "category": "sqli",
+      "bytes": 1410,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "idmlbb.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "idmlbb_thefight.py",
+      "category": "misc",
+      "bytes": 3827,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "idmlbb_thefight2.py",
+      "category": "misc",
+      "bytes": 4037,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "idmlbb_wp_sql.py",
+      "category": "sqli",
+      "bytes": 2200,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "idmlbb.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "idmlbb_wp_sqli_boolean.py",
+      "category": "sqli",
+      "bytes": 2862,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "idmlbb.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "idvalorant_final_attack.py",
+      "category": "misc",
+      "bytes": 8045,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [
+        "103.233.193.42",
+        "godlnwstore.com"
+      ],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "kiddyxstore_recon.py",
+      "category": "target-discovery",
+      "bytes": 2607,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 11,
+      "payloads": 0,
+      "hosts": [
+        "kiddyxstore.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "login_params_test.py",
+      "category": "auth-forms",
+      "bytes": 1609,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "makus-keygen.ps1",
+      "category": "misc",
+      "bytes": 6991,
+      "parameterized": true,
+      "uses_urllib": false,
+      "paths": 3,
+      "payloads": 0,
+      "hosts": [
+        "127.0.0.1"
+      ],
+      "ip_literals": [
+        "127.0.0.1"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "makus-voicegun/voicegun.py",
+      "category": "misc",
+      "bytes": 33301,
+      "parameterized": true,
+      "uses_urllib": true,
+      "paths": 3,
+      "payloads": 0,
+      "hosts": [
+        "discord.com"
+      ],
+      "ip_literals": [
+        "124.0.0.0"
+      ],
+      "third_party_imports": [
+        "aiohttp",
+        "aiohttp_socks",
+        "nacl"
+      ]
+    },
+    {
+      "path": "makus-voicegun/voicegun2.py",
+      "category": "misc",
+      "bytes": 28047,
+      "parameterized": true,
+      "uses_urllib": false,
+      "paths": 4,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": [
+        "aiohttp",
+        "voicegun"
+      ]
+    },
+    {
+      "path": "makus-voicegun/voicegun3.py",
+      "category": "misc",
+      "bytes": 29186,
+      "parameterized": true,
+      "uses_urllib": true,
+      "paths": 4,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": [
+        "aiohttp",
+        "voicegun"
+      ]
+    },
+    {
+      "path": "meen_admin_attack.py",
+      "category": "misc",
+      "bytes": 5814,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "meen_origin_wp.py",
+      "category": "misc",
+      "bytes": 4050,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [
+        "103.233.193.42"
+      ],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "meen_single.py",
+      "category": "misc",
+      "bytes": 3583,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "meen_xmlrpc_thefight.py",
+      "category": "misc",
+      "bytes": 4804,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "meen.in.th"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "mysql_origin_brute.py",
+      "category": "sqli",
+      "bytes": 2581,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": [
+        "pymysql"
+      ]
+    },
+    {
+      "path": "nuadkhawshop_common_paths.py",
+      "category": "endpoint-discovery",
+      "bytes": 1329,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 32,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "nuadkhawshop_js_analysis.py",
+      "category": "js-analysis",
+      "bytes": 2214,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 1,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "nuadkhawshop_login_api.py",
+      "category": "auth-forms",
+      "bytes": 3369,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 1,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "nuadkhawshop_login_api_find.py",
+      "category": "auth-forms",
+      "bytes": 2530,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 1,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "nuadkhawshop_login_js.py",
+      "category": "auth-forms",
+      "bytes": 3104,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 1,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "nuadkhawshop_sqli.py",
+      "category": "sqli",
+      "bytes": 3721,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "nuadkhawshop_sqli_deep.py",
+      "category": "sqli",
+      "bytes": 2769,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 3,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "nuadkhawshop_sqli_test.py",
+      "category": "sqli",
+      "bytes": 2589,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "opencode2api/fingerprint.py",
+      "category": "misc",
+      "bytes": 3992,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "opencode.ai"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "opencode2api/gateway.py",
+      "category": "misc",
+      "bytes": 8757,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 5,
+      "payloads": 0,
+      "hosts": [
+        "opencode.ai",
+        "www.cloudflare.com"
+      ],
+      "ip_literals": [
+        "127.0.0.1"
+      ],
+      "third_party_imports": [
+        "fingerprint",
+        "httpx",
+        "starlette",
+        "uvicorn"
+      ]
+    },
+    {
+      "path": "opencode2api/warp_rotate.py",
+      "category": "misc",
+      "bytes": 7863,
+      "parameterized": true,
+      "uses_urllib": true,
+      "paths": 3,
+      "payloads": 0,
+      "hosts": [
+        "api.github.com",
+        "download.wireguard.com",
+        "www.cloudflare.com"
+      ],
+      "ip_literals": [
+        "1.1.1.1"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "origin_check.py",
+      "category": "misc",
+      "bytes": 1738,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "103.233.193.42"
+      ],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "origin_final_brute.py",
+      "category": "brute",
+      "bytes": 5713,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "103.233.193.42"
+      ],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "origin_services_brute.py",
+      "category": "brute",
+      "bytes": 6371,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "103.233.193.42"
+      ],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": [
+        "paramiko"
+      ]
+    },
+    {
+      "path": "password_reset.py",
+      "category": "brute",
+      "bytes": 5449,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [
+        "idmlbb.com",
+        "meen.in.th"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "phishing_kit.py",
+      "category": "misc",
+      "bytes": 5566,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 1,
+      "hosts": [
+        "attacker_server",
+        "godlnwstore.com",
+        "hooks.slack.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "qoder-zen.ps1",
+      "category": "misc",
+      "bytes": 4151,
+      "parameterized": true,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "127.0.0.1"
+      ],
+      "ip_literals": [
+        "127.0.0.1"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "recaptcha_solver.py",
+      "category": "misc",
+      "bytes": 6096,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "2captcha.com",
+        "api.anti-captcha.com",
+        "godlnwstore.com",
+        "www.google.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "recon_alive.py",
+      "category": "target-discovery",
+      "bytes": 970,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "godlnwstore.com",
+        "idmlbb.com",
+        "meen.in.th",
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "scan_targets.py",
+      "category": "target-discovery",
+      "bytes": 1797,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "scan_targets_live.py",
+      "category": "target-discovery",
+      "bytes": 2459,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 8,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_blind_sqli.py",
+      "category": "sqli",
+      "bytes": 3025,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_captcha_login.py",
+      "category": "auth-forms",
+      "bytes": 3114,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_check.py",
+      "category": "misc",
+      "bytes": 766,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "godlnwstore.com",
+        "idmlbb.com",
+        "meen.in.th",
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_common_paths.py",
+      "category": "endpoint-discovery",
+      "bytes": 1249,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 33,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_cred_stuff.py",
+      "category": "brute",
+      "bytes": 4584,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 3,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_debug.py",
+      "category": "misc",
+      "bytes": 2776,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_error_extract.py",
+      "category": "misc",
+      "bytes": 3324,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_error_sqli.py",
+      "category": "sqli",
+      "bytes": 2502,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_error_v2.py",
+      "category": "misc",
+      "bytes": 3243,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_error_v3.py",
+      "category": "misc",
+      "bytes": 2787,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_final.py",
+      "category": "misc",
+      "bytes": 3824,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_final_export.py",
+      "category": "port-probe",
+      "bytes": 2633,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_final_injection.py",
+      "category": "misc",
+      "bytes": 2910,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_final_sqli.py",
+      "category": "sqli",
+      "bytes": 3969,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_final_v2.py",
+      "category": "misc",
+      "bytes": 3907,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_final_v3.py",
+      "category": "misc",
+      "bytes": 3899,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_login_captcha.py",
+      "category": "auth-forms",
+      "bytes": 1293,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_login_json.py",
+      "category": "auth-forms",
+      "bytes": 1059,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_login_recon.py",
+      "category": "auth-forms",
+      "bytes": 3630,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_login_test.py",
+      "category": "auth-forms",
+      "bytes": 1155,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_login_user_pass.py",
+      "category": "auth-forms",
+      "bytes": 1179,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_params_test.py",
+      "category": "misc",
+      "bytes": 1241,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_pma.py",
+      "category": "misc",
+      "bytes": 1382,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 4,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_pma_check.py",
+      "category": "misc",
+      "bytes": 5478,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_pma_final.py",
+      "category": "misc",
+      "bytes": 3943,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_pma_final_attempt.py",
+      "category": "misc",
+      "bytes": 3980,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_pma_login.py",
+      "category": "auth-forms",
+      "bytes": 3706,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_pma_sql.py",
+      "category": "sqli",
+      "bytes": 4148,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_pma_sql2.py",
+      "category": "sqli",
+      "bytes": 4778,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_pma_verify.py",
+      "category": "misc",
+      "bytes": 5108,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_recon.py",
+      "category": "target-discovery",
+      "bytes": 4100,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_register_test.py",
+      "category": "auth-forms",
+      "bytes": 2884,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_sqli.py",
+      "category": "sqli",
+      "bytes": 3526,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_sqli_deep.py",
+      "category": "sqli",
+      "bytes": 3228,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_sqli_deep2.py",
+      "category": "sqli",
+      "bytes": 2820,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_sqli_encoded.py",
+      "category": "sqli",
+      "bytes": 2214,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 7,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_sqli_extract.py",
+      "category": "sqli",
+      "bytes": 4346,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_sqli_final.py",
+      "category": "sqli",
+      "bytes": 4014,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_sqli_final_v2.py",
+      "category": "sqli",
+      "bytes": 3850,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "siamaidai_sqli_final_v3.py",
+      "category": "sqli",
+      "bytes": 3877,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "sqli_compare.py",
+      "category": "sqli",
+      "bytes": 1078,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "sqli_login_test.py",
+      "category": "sqli",
+      "bytes": 1387,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "squirrel_brute_cf.py",
+      "category": "brute",
+      "bytes": 3052,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 2,
+      "payloads": 0,
+      "hosts": [
+        "godlnwstore.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "squirrel_single.py",
+      "category": "misc",
+      "bytes": 1770,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 2,
+      "payloads": 0,
+      "hosts": [
+        "godlnwstore.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "squirrel_single2.py",
+      "category": "misc",
+      "bytes": 2021,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 2,
+      "payloads": 0,
+      "hosts": [
+        "godlnwstore.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "ssh_origin_brute.py",
+      "category": "brute",
+      "bytes": 2002,
+      "parameterized": false,
+      "uses_urllib": false,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": [
+        "paramiko"
+      ]
+    },
+    {
+      "path": "targets_recon.py",
+      "category": "target-discovery",
+      "bytes": 761,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 1,
+      "payloads": 0,
+      "hosts": [
+        "godlnwstore.com",
+        "idmlbb.com",
+        "meen.in.th",
+        "siamaidai.xyz"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "verify_thefight.py",
+      "category": "misc",
+      "bytes": 4368,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 5,
+      "payloads": 0,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "view_login_page.py",
+      "category": "auth-forms",
+      "bytes": 522,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "nuadkhawshop.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "woocommerce_attack.py",
+      "category": "misc",
+      "bytes": 8155,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 13,
+      "payloads": 1,
+      "hosts": [],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "wp_origin_thefight.py",
+      "category": "misc",
+      "bytes": 3632,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 2,
+      "payloads": 0,
+      "hosts": [
+        "103.233.193.42"
+      ],
+      "ip_literals": [
+        "103.233.193.42"
+      ],
+      "third_party_imports": []
+    },
+    {
+      "path": "z9pay-hack/exploit/cred_brute.py",
+      "category": "brute",
+      "bytes": 2973,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 2,
+      "payloads": 0,
+      "hosts": [
+        "z9pay.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    },
+    {
+      "path": "z9pay-hack/exploit/sweep_products.py",
+      "category": "endpoint-discovery",
+      "bytes": 2131,
+      "parameterized": false,
+      "uses_urllib": true,
+      "paths": 0,
+      "payloads": 0,
+      "hosts": [
+        "z9pay.com"
+      ],
+      "ip_literals": [],
+      "third_party_imports": []
+    }
+  ]
+}
